@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <title><%= yield :title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="We help you become a business owner. We are your right hand in day to day operations, we make things easier and help you find success.">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%# stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%# render "shared/favicon" %>
+    <% hotwire_livereload_tags if Rails.env.development? %>
+  </head>
+  <body class="h-full">
+    <%= yield %>
+  </body>
+</html>

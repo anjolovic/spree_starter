@@ -1,1 +1,5 @@
-module ApplicationHelper; end
+module ApplicationHelper
+
+attr_reader :title
+
+end

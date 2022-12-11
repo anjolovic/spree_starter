@@ -47,5 +47,5 @@ RUN SECRET_KEY_BASE=skb DB_ADAPTER=nulldb bundle exec rails assets:precompile
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
 
-EXPOSE 4000
+EXPOSE 4222
 CMD ["bash"]

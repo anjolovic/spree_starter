@@ -1,2 +1,5 @@
-web: bin/rails server -p 4000
+web: bin/rails server -p 4222
 js: yarn build --watch
+redis: redis-server --port 6379
+worker: bin/sidekiq
+css: bin/rails tailwindcss:watch

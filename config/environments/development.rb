@@ -78,4 +78,6 @@ Rails.application.configure do
   }
 
   config.hosts.clear
+  config.hotwire_livereload.force_reload_paths << Rails.root.join("app/assets/stylesheets")
+  config.hotwire_livereload.force_reload_paths << Rails.root.join("app/javascript")
 end

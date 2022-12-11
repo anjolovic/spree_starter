@@ -38,7 +38,7 @@ group :development, :test do
   gem 'flamegraph'
   gem 'stackprof'
   gem 'memory_profiler'
-
+  gem 'pry-rails'
   gem 'webmock'
 end
 
@@ -74,16 +74,20 @@ gem 'spree', '~> 4.5'
 gem 'spree_sample', '~> 4.5'
 gem 'spree_emails', '~> 4.5'
 gem 'spree_backend', '~> 4.5'
+gem 'spree_frontend', '~> 4.5'
 gem 'spree_gateway', '~> 3.10'
 gem 'spree_auth_devise', '~> 4.5'
 gem 'spree_i18n', '~> 5.1'
 gem 'spree_dev_tools', require: false, group: %w[test development]
 
+# Web Drivers
+gem 'webdrivers', '~> 4.3'
+
 # Sentry Client
 gem 'sentry-raven'
 
 # Scout Client
-gem 'scout_apm'
+# gem 'scout_apm'
 
 # Rack CORS Middleware
 gem 'rack-cors'
@@ -101,3 +105,14 @@ gem 'oj'
 
 # Fix SCSS errors with Ruby 3 on MacOS
 gem 'sassc', github: 'sass/sassc-ruby', group: :development
+
+# Use Redis for Action Cable
+gem "redis", "~> 4.0"
+
+# View component
+gem "view_component"
+gem "lookbook", "~> 0.9.7"
+
+gem "hotwire-livereload", "~> 1.2"
+
+gem "tailwindcss-rails", "~> 2.0"
